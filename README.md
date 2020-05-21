@@ -13,12 +13,12 @@ npm install -g .
 
 ## Features
 
-1. you can roll any number of all the dice types, d4, d8, ..., d20.
+1. you can roll any number of all the dice types, d4, d6, ..., d20.
 2. you can add a modifier too. 
 
 ## Motivation
 
-I saw the google version for dice roll and tried to implement it with js.
+I saw the google version for dice roll and tried to implement it with node.js.
 
 ---
 
