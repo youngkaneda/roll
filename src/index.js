@@ -20,7 +20,12 @@ const modifier = args[args.length - 1].match('^[0-9]*$') ? parseInt(args[args.le
 
 const result = dices.map(dice => dice.split('d'))
     .filter(arr => arr.length === 2)
-    .flatMap(arr => range(parseInt(arr[0])).map(v => new Dice(arr[1])))
+    .flatMap(arr => {
+        if (parseInt(arr[0]) < 1) {
+            throw new Error('Invalid dice amount. Only number greater than 1 are allowed.');
+        }
+        return range(parseInt(arr[0])).map(v => new Dice(arr[1]));
+    })
     .map(dice => { return { type: `d${dice.sides}`, value: dice.roll() } });
 
 if (result.length === 0) {
