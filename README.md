@@ -1,2 +1,2 @@
 # roll
-A dice roll Java implementation.
+A dice roll javascript implementation.
