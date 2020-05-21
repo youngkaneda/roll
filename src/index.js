@@ -10,8 +10,8 @@ Array.prototype.flatMap = function(lambda) {
     return Array.prototype.concat.apply([], this.map(lambda));
 }
 
-let dices = args[0].split(',');
-const modifier = args[1] ? parseInt(args[1]) : 0;
+let dices = args.slice(0, args.length);
+const modifier = args[args.length - 1] ? parseInt(args[args.length - 1]) : 0;
 
 const result = dices.map(dice => dice.split('d'))
     .filter(arr => arr.length === 2)
