@@ -1,4 +1,4 @@
-# roll
+# roll 🎲
 A dice roll javascript implementation.
 
 ## Instalation
