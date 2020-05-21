@@ -9,7 +9,15 @@ cd roll
 npm install -g .
 ```
 
+## How to use
+
+```
+$ roll 'dice' 'dice' ... 'modifier'
+```
+
 ## Screenshots
+
+![ss](ss.png)
 
 ## Features
 
