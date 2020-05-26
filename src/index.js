@@ -16,7 +16,7 @@ if (dices.length === 0) {
     throw new Error('You need pass at least one dice.');
 }
 
-const modifier = args[args.length - 1].match('^[0-9]*$') ? parseInt(args[args.length - 1]) : 0;
+const modifier = args[args.length - 1].match('^[-+]?[0-9]*$') ? parseInt(args[args.length - 1]) : 0;
 
 const result = dices.map(dice => dice.split('d'))
     .filter(arr => arr.length === 2)
