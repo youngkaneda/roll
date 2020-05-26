@@ -4,7 +4,7 @@ A dice roll javascript implementation.
 ## Instalation
 
 ```
-git clone https://github.com/kanedatc/roll
+git clone https://github.com/youngkaneda/roll
 cd roll
 npm install -g .
 ```
