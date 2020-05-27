@@ -1,5 +1,5 @@
 {
-    "name": "roll-dice",
+    "name": "rdice",
     "version": "1.0.0",
     "description": "a roll dice tool.",
     "main": "src/index.js",
